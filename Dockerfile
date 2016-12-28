@@ -1,5 +1,7 @@
 FROM php:7.1-apache
 
+MAINTAINER Georg Meyer <gm@interactive-pioneers.de>
+
 # utilities
 RUN apt-get update \
   && apt-get install -y build-essential sudo unzip

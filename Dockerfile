@@ -36,7 +36,7 @@ RUN rm -rf ${HTDOCS}/* \
 RUN rm -rf /tmp/wordpress
 
 # Wordpress plugins
-ENV WP_PLUGINS wp-nested-pages.1.5.4 timber-library.1.0.4 regenerate-thumbnails
+ENV WP_PLUGINS wp-nested-pages.1.7.1 timber-library.1.2.4 regenerate-thumbnails
 RUN for PLUGIN in ${WP_PLUGINS}; do \
   curl -sSL https://downloads.wordpress.org/plugin/${PLUGIN}.zip > /tmp/${PLUGIN}.zip \
   && unzip -q -o /tmp/${PLUGIN}.zip -d ${HTDOCS}/wp-content/plugins/; \

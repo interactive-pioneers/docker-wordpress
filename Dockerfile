@@ -23,7 +23,7 @@ RUN usermod -a -G www-data deploy
 # Wordpress
 WORKDIR /tmp
 ENV HTDOCS /var/www/html
-ENV WP_VERSION 4.5.3
+ENV WP_VERSION 4.7.5
 ENV WP_LANG de
 ENV WP_LOCALE de_DE
 RUN curl -sSL https://${WP_LANG}.wordpress.org/wordpress-${WP_VERSION}-${WP_LOCALE}.tar.gz | tar xz

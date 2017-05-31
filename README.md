@@ -1,4 +1,4 @@
-# Wordpress docker
+# Wordpress docker [![Build Status](https://api.travis-ci.org/interactive-pioneers/docker-wordpress.svg)](https://travis-ci.org/interactive-pioneers/docker-wordpress)
 
 Extended php-apache Docker image.
 
@@ -6,11 +6,11 @@ Extended php-apache Docker image.
 
 - node 7.x
 - deploy user with sudor
-- Wordpress 4.5.3 DE_de
+- Wordpress 4.7.5 DE_de
 - Wordpress plugins
-  - wp-nested-pages:1.5.4
-  - timber-library:1.0.4
-  - regenerate-thumbnails:latest
+  - wp-nested-pages: 1.7.1
+  - timber-library: 1.2.4
+  - regenerate-thumbnails: latest
 
 ## Licence
 

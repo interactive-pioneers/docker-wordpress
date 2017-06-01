@@ -11,6 +11,9 @@ RUN apt-get update
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
   && apt-get install -y nodejs
 
+# mysqli
+RUN docker-php-ext-install mysqli
+
 # Create user account
 ENV USERNAME deploy
 ENV HOME /home/$USERNAME

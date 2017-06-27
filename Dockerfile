@@ -14,6 +14,8 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
 # mysqli
 RUN docker-php-ext-install mysqli
 
+RUN a2enmod rewrite
+
 # Create user account
 ENV USERNAME deploy
 ENV HOME /home/$USERNAME
